@@ -1,0 +1,105 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    /* background-color: rgb(85, 162, 229); */
+}
+.container{
+    width: 100%;
+    min-height: 96vh;
+    background: linear-gradient(135deg ,#153677,#3e0b4a);
+    padding: 10px;
+}
+.todo{
+    height: 30vh;
+    width: 100%;
+    max-width: 391px;
+    background-color: #ffffff;
+    margin: 111px auto 27px;
+    padding: 33px 33px;
+    padding: 25px 69px;
+    border-radius: 50px;
+    background-color: #fdfdfd;
+    color: black;
+}
+.todo h2{
+    display: flex;
+    align-items: center;
+    color: rgb(28, 21, 21);
+    margin-left: 99px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+.todo h2 img{
+    width: 30px;
+    margin-left: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 20px;
+    padding-left: 12px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background:transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    background:#ad6217;
+    color: white;
+    padding: 16px 40px;
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 14px;
+}
+ul li{
+    list-style: none;
+    font-size: 12px;
+    padding: 13px 0px 0px 59px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background: white;
+    font-size: larger;
+}
+ul li::before{
+    content:"";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+ text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url('checked.png');
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    background: #aa0e0ecc;
+    border-radius: 12px;
+}
